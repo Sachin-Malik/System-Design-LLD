@@ -1,5 +1,5 @@
+import java.util.ArrayDeque;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Queue;
 
 class Ludo {
@@ -13,7 +13,7 @@ class Game {
 
     Board board;
     Dice dice;
-    Queue<Player> players = new LinkedList<Player>();
+    Queue<Player> players = new ArrayDeque<Player>();
     String[] playerNames = new String[10];
     Boolean haveWinner = false;
 
